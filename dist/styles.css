@@ -63,15 +63,89 @@
   }
 }
 
-.country-label {
-  fill: #f4f4f4;
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: -0.03em;
+.journey-card {
+  padding: 2.5rem;
 }
 
-.country-arrow {
-  fill: #bdbdbd;
-  font-size: 24px;
+.journey-header span {
+  color: #9c9c9c;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.journey-header strong {
+  display: block;
+  margin-top: 0.5rem;
+  color: #f4f4f4;
+  font-size: 1.3rem;
+}
+
+.journey-path {
+  display: grid;
+  grid-template-columns: 1fr 70px 1fr 70px 1fr;
+  align-items: center;
+  margin: 2.5rem 0;
+}
+
+.country {
+  padding: 1.5rem;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.045);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.country span {
+  color: #9a9a9a;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+}
+
+.country h3 {
+  margin: 0.75rem 0 0.4rem;
+  color: #f5f5f5;
+  font-size: 1.4rem;
+}
+
+.country p {
+  color: #b9b9b9;
+  line-height: 1.5;
+}
+
+.path-line {
+  height: 2px;
+  background: linear-gradient(90deg, #555, #eee, #555);
+}
+
+.discipline-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.9rem;
+}
+
+.discipline-grid div {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #e6e6e6;
   font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .journey-path {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .path-line {
+    height: 40px;
+    width: 2px;
+    margin: auto;
+  }
+
+  .discipline-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
