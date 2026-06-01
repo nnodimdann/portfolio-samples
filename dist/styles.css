@@ -63,89 +63,130 @@
   }
 }
 
-.journey-card {
-  padding: 2.5rem;
+.map-card {
+padding: 2.5rem;
+min-height: 460px;
 }
 
-.journey-header span {
-  color: #9c9c9c;
-  font-size: 0.8rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+.map-header span {
+display: block;
+color: #9c9c9c;
+font-size: 0.8rem;
+letter-spacing: 0.14em;
+text-transform: uppercase;
+margin-bottom: 0.5rem;
 }
 
-.journey-header strong {
-  display: block;
-  margin-top: 0.5rem;
-  color: #f4f4f4;
-  font-size: 1.3rem;
+.map-header strong {
+color: #f4f4f4;
+font-size: 1.25rem;
 }
 
-.journey-path {
-  display: grid;
-  grid-template-columns: 1fr 70px 1fr 70px 1fr;
-  align-items: center;
-  margin: 2.5rem 0;
+.route-map {
+position: relative;
+height: 360px;
+margin-top: 2rem;
 }
 
-.country {
-  padding: 1.5rem;
-  border-radius: 22px;
-  background: rgba(255,255,255,0.045);
-  border: 1px solid rgba(255,255,255,0.1);
+.route-point,
+.branch {
+position: absolute;
+z-index: 2;
 }
 
-.country span {
-  color: #9a9a9a;
-  font-size: 0.8rem;
-  letter-spacing: 0.15em;
+.route-point .dot {
+width: 18px;
+height: 18px;
+display: block;
+border-radius: 50%;
+background: #f1f1f1;
+box-shadow: 0 0 30px rgba(255,255,255,0.35);
+margin-bottom: 0.8rem;
 }
 
-.country h3 {
-  margin: 0.75rem 0 0.4rem;
-  color: #f5f5f5;
-  font-size: 1.4rem;
+.route-point h3 {
+color: #f5f5f5;
+font-size: 1.35rem;
+margin: 0;
 }
 
-.country p {
-  color: #b9b9b9;
-  line-height: 1.5;
+.route-point p {
+color: #aaa;
+margin-top: 0.4rem;
 }
 
-.path-line {
-  height: 2px;
-  background: linear-gradient(90deg, #555, #eee, #555);
+.nigeria {
+left: 3%;
+top: 58%;
 }
 
-.discipline-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.9rem;
+.india {
+left: 38%;
+top: 34%;
 }
 
-.discipline-grid div {
-  text-align: center;
-  padding: 1rem;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.07);
-  border: 1px solid rgba(255,255,255,0.1);
-  color: #e6e6e6;
-  font-weight: 700;
+.usa {
+right: 5%;
+top: 55%;
 }
+
+.route-line {
+position: absolute;
+height: 2px;
+background: linear-gradient(90deg, transparent, #d8d8d8, transparent);
+transform-origin: left center;
+z-index: 1;
+}
+
+.line-one {
+width: 330px;
+left: 13%;
+top: 60%;
+transform: rotate(-28deg);
+}
+
+.line-two {
+width: 340px;
+left: 47%;
+top: 42%;
+transform: rotate(28deg);
+}
+
+.branch {
+padding: 0.85rem 1.2rem;
+border-radius: 999px;
+background: rgba(255,255,255,0.06);
+border: 1px solid rgba(255,255,255,0.14);
+color: #e9e9e9;
+font-weight: 800;
+}
+
+.finance { right: 15%; top: 12%; }
+.research { right: 28%; top: 3%; }
+.software { right: 2%; top: 25%; }
+.leadership { right: 10%; bottom: 5%; }
 
 @media (max-width: 900px) {
-  .journey-path {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
+.map-card {
+min-height: auto;
+}
 
-  .path-line {
-    height: 40px;
-    width: 2px;
-    margin: auto;
-  }
+.route-map {
+height: auto;
+display: grid;
+gap: 1rem;
+}
 
-  .discipline-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.route-point,
+.branch,
+.route-line {
+position: static;
+}
+
+.route-line {
+width: 2px;
+height: 40px;
+margin-left: 0.5rem;
+transform: none;
+}
 }
