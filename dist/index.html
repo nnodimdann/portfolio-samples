@@ -55,16 +55,50 @@
         <h2>Rooted across countries, built across disciplines.</h2>
         <p>My work sits between economics, finance, and software. I use code to make financial data clearer, research to test assumptions, and leadership experience to turn analysis into decisions.</p>
       </div>
-      <div class="tree-card panel">
-        <svg viewBox="0 0 520 280" role="img" aria-label="Career growth tree connecting roots, trunk, and branches">
-          <path class="root" d="M260 218 C230 245 195 250 160 260 M260 218 C285 248 330 252 375 262 M260 218 C248 248 230 260 205 272 M260 218 C278 246 300 260 325 272"/>
-          <path class="trunk" d="M260 220 C250 170 260 125 260 82"/>
-          <path class="branch" d="M260 118 C210 98 175 76 140 42 M260 106 C315 88 360 62 405 34 M260 90 C240 58 230 40 210 20 M260 100 C300 112 355 116 425 105"/>
-          <circle cx="140" cy="42" r="5"/><circle cx="405" cy="34" r="5"/><circle cx="210" cy="20" r="5"/><circle cx="425" cy="105" r="5"/>
-          <text x="110" y="34">Finance</text><text x="415" y="32">Software</text><text x="182" y="16">Research</text><text x="435" y="110">Leadership</text>
-          <text x="210" y="252">Nigeria → India → USA</text>
-        </svg>
-      </div>
+        <div class="tree-card panel">
+    <div class="tree-title">
+      <span>Growth Map</span>
+      <strong>Rooted globally. Built across disciplines.</strong>
+    </div>
+
+    <svg class="growth-tree" viewBox="0 0 720 420" role="img" aria-label="Growth map from Nigeria to India to USA branching into finance, research, software, and leadership">
+      <defs>
+        <linearGradient id="branchGradient" x1="0" x2="1">
+          <stop offset="0%" stop-color="#777" />
+          <stop offset="100%" stop-color="#f1f1f1" />
+        </linearGradient>
+      </defs>
+
+      <!-- Roots -->
+      <path class="tree-root" d="M360 330 C315 360 275 370 220 382" />
+      <path class="tree-root" d="M360 330 C405 360 455 372 515 386" />
+      <path class="tree-root" d="M360 330 C335 370 310 390 275 405" />
+      <path class="tree-root" d="M360 330 C385 370 415 392 455 405" />
+
+      <!-- Trunk -->
+      <path class="tree-trunk" d="M360 330 C352 270 358 220 360 170 C362 125 360 95 360 70" />
+
+      <!-- Branches -->
+      <path class="tree-branch" d="M360 165 C290 145 250 110 205 70" />
+      <path class="tree-branch" d="M360 140 C340 105 322 82 300 45" />
+      <path class="tree-branch" d="M360 145 C425 120 485 85 560 42" />
+      <path class="tree-branch" d="M360 170 C455 175 530 165 625 148" />
+
+      <!-- Nodes -->
+      <circle class="tree-node" cx="205" cy="70" r="9" />
+      <circle class="tree-node" cx="300" cy="45" r="9" />
+      <circle class="tree-node" cx="560" cy="42" r="9" />
+      <circle class="tree-node" cx="625" cy="148" r="9" />
+
+      <!-- Labels -->
+      <text class="tree-label" x="145" y="55">Finance</text>
+      <text class="tree-label" x="260" y="30">Research</text>
+      <text class="tree-label" x="575" y="48">Software</text>
+      <text class="tree-label" x="640" y="155">Leadership</text>
+
+      <text class="tree-roots-label" x="245" y="365">Nigeria → India → United States</text>
+    </svg>
+  </div>
     </section>
 
     <section class="research-card model-logic-card">
