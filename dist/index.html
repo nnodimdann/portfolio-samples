@@ -15,7 +15,7 @@
   <header class="nav">
     <a class="logo" href="#home" aria-label="Daniel Nnodim home">DN</a>
 
-```
+
 <nav>
   <a href="#about">About</a>
   <a href="#research">Research</a>
@@ -167,58 +167,51 @@
   <p class="kicker">Research</p>
   <h2>Research built around market questions.</h2>
 
-  <div class="cards two">
-    <article class="card featured">
-      <h3>Analysing the Impact of R&D on Stock Returns</h3>
-      <p>
-        Empirical finance study testing whether R&D investment intensity
-        predicts annual stock returns for 100 publicly traded firms, split
-        between technology and non-technology sectors.
-      </p>
+  <article class="card chart-card">
+  <h3>Research Framework</h3>
 
-      <div class="tags">
-        <span>OLS</span>
-        <span>HC3 SE</span>
-        <span>VIF</span>
-        <span>Ramsey RESET</span>
-      </div>
-    </article>
+  <div class="research-flow">
+    <div class="flow-box">
+      <span class="flow-number">01</span>
+      <h4>Data Collection</h4>
+      <p>100 publicly traded firms across technology and non-technology sectors.</p>
+    </div>
 
-    <article class="card">
-      <h3>Research Framework</h3>
+```
+<div class="flow-arrow">→</div>
 
-      <div class="research-flow">
-        <div class="flow-box">
-          <span class="flow-number">01</span>
-          <h4>Inputs</h4>
-          <p>R&D intensity, firm size, profitability, and sector classification.</p>
-        </div>
+<div class="flow-box">
+  <span class="flow-number">02</span>
+  <h4>Model Construction</h4>
+  <p>OLS regression using R&D intensity and firm characteristics.</p>
+</div>
 
-        <div class="flow-box">
-          <span class="flow-number">02</span>
-          <h4>Model</h4>
-          <p>OLS regression testing whether R&D investment predicts stock returns.</p>
-        </div>
+<div class="flow-arrow">→</div>
 
-        <div class="flow-box">
-          <span class="flow-number">03</span>
-          <h4>Diagnostics</h4>
-          <p>HC3 robust standard errors, VIF diagnostics, and RESET testing.</p>
-        </div>
+<div class="flow-box">
+  <span class="flow-number">03</span>
+  <h4>Testing</h4>
+  <p>HC3 robust standard errors, VIF diagnostics, and Ramsey RESET testing.</p>
+</div>
 
-        <div class="flow-box">
-          <span class="flow-number">04</span>
-          <h4>Finding</h4>
-          <p>No statistically significant R&D premium detected. R² ≈ 0.01.</p>
-        </div>
-      </div>
+<div class="flow-arrow">→</div>
 
-      <p class="research-summary">
-        The result points toward market efficiency and omitted-variable
-        limitations rather than a simple R&D-return relationship.
-      </p>
-    </article>
+<div class="flow-box">
+  <span class="flow-number">04</span>
+  <h4>Conclusion</h4>
+  <p>No statistically significant R&D premium detected (R² ≈ 0.01).</p>
+</div>
+```
+
   </div>
+
+  <p class="research-summary">
+    The findings suggest that R&D spending alone is not a reliable predictor of
+    stock returns and support explanations rooted in market efficiency and
+    omitted-variable effects.
+  </p>
+</article>
+
 </section>
 
 <section id="projects" class="section">
@@ -342,7 +335,7 @@
     </a>
   </div>
 </section>
-```
+
 
   </main>
 
