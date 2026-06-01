@@ -1,0 +1,11 @@
+{
+  "name": "daniel-portfolio-static-render",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "start": "node server.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
