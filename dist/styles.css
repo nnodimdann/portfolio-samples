@@ -187,3 +187,22 @@ footer { text-align: center; color: #777; padding: 36px 6vw 54px; border-top: 1p
   .bar-row { grid-template-columns: 1fr; }
   .bar-row b { display: none; }
 }
+
+.model-arrow {
+  font-size: 3rem;
+  color: rgba(255,255,255,0.55);
+  text-shadow: 0 0 20px rgba(255,255,255,0.15);
+}
+
+.model-step {
+  width: 220px;
+}
+
+.model-step:nth-child(5) {
+  width: 260px;
+}
+
+.model-step.result {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.18);
+}
