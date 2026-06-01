@@ -67,33 +67,45 @@
       </div>
     </section>
 
-    <section id="research" class="section">
-      <p class="kicker">Research</p>
-      <h2>Research built around market questions.</h2>
-      <div class="cards two">
-        <article class="card featured">
-          <h3>Analysing the Impact of R&D on Stock Returns</h3>
-          <p>Empirical finance study testing whether R&D investment intensity predicts annual stock returns for 100 publicly traded firms, split between technology and non-technology sectors.</p>
-          <div class="tags"><span>OLS</span><span>HC3 SE</span><span>VIF</span><span>Ramsey RESET</span></div>
-        </article>
-        <article class="card chart-card">
-          <h3>Model Logic</h3>
-          <div class="line-chart" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
-          <p>R² ≈ 0.01 with no statistically significant R&D premium, interpreted through Efficient Market Hypothesis reasoning and omitted-variable limitations.</p>
-        </article>
+    <section class="research-card model-logic-card">
+      <div class="card-header">
+        <span class="eyebrow">Research Model</span>
+        <h2>Model Logic</h2>
+      </div>
+
+      <div class="model-flow">
+        <div class="model-step">
+          <span>01</span>
+          <h3>Input Variables</h3>
+          <p>R&D intensity, firm size, profitability, and sector classification.</p>
+        </div>
+
+        <div class="model-arrow">→</div>
+
+        <div class="model-step">
+          <span>02</span>
+          <h3>OLS Regression</h3>
+          <p>Tested whether R&D investment predicts annual stock returns.</p>
+        </div>
+
+        <div class="model-arrow">→</div>
+
+        <div class="model-step">
+          <span>03</span>
+          <h3>Result</h3>
+          <p>R² ≈ 0.01 with no statistically significant R&D premium.</p>
+        </div>
+
+        <div class="model-arrow">→</div>
+
+        <div class="model-step">
+          <span>04</span>
+          <h3>Interpretation</h3>
+          <p>Findings point toward market efficiency and omitted-variable limits.</p>
+        </div>
       </div>
     </section>
-
-    <section id="projects" class="section">
-      <p class="kicker">Selected Work</p>
-      <h2>Finance-facing software projects.</h2>
-      <div class="cards three">
-        <article class="card"><h3>TeamBlueLock</h3><p>Full-stack financial analysis platform for inventory management, ingredient costing, and profit-margin reporting.</p><span class="linkish">Next.js • MongoDB • QA</span></article>
-        <article class="card"><h3>Personal Finance Tracker</h3><p>Budgeting and transaction platform with spending trend reporting and budget-variance logic.</p><span class="linkish">Cash flow • FP&A logic</span></article>
-        <article class="card"><h3>Currency Converter</h3><p>Python CLI querying live FX APIs for cross-currency valuation and rate-feed handling.</p><span class="linkish">Python • FX APIs</span></article>
-      </div>
-    </section>
-
+    
     <section id="experience" class="section split reverse">
       <div class="panel timeline">
         <div><span></span><b>Incoming Head, Finance & Investment</b><p>Ozyberg Sicurezza Limited — 2026</p></div>
